@@ -1,0 +1,128 @@
+/*  Importando las fuentes a utilizar   */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text&family=Roboto+Mono:wght@500&display=swap');
+
+body{
+    font-family: 'Roboto Mono', monospace;
+    
+}
+
+#header {
+    margin-top: 5em;
+
+}
+
+#academico {
+    font-family: 'Golos Text', sans-serif;
+    margin-top: 4em;
+    padding-top: 1em;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+#experiencias {
+    font-family: 'Golos Text', sans-serif;
+    margin-top: 4em;
+    padding-top: 1em;
+    text-align: center;
+}
+#contacto{
+    font-family: 'Golos Text', sans-serif;
+}
+.logos{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.logos img{
+    max-height: 80px;
+}
+
+#divImg{
+    position: relative;
+    display: inline-block; /* Define el mismo tamaño que la imagen*/
+}
+
+/*  Posición de cada Logo Skill     */
+
+.imgText{
+    display: none;
+}
+
+#htmlLogo{
+    max-height: 15%;
+    display: flex;
+    position: absolute;
+    top: 5%;
+    left: 60%;
+}
+
+.pathsContainer{
+    background-color: aqua;
+    height: 0;
+    width: 0;
+}
+
+#cssLogo{
+    max-height: 15%;
+    display: flex;
+    position: absolute;
+    top: 40%;
+    left: 85%;
+}
+
+#jsLogo {
+    max-height: 15%;
+    display: flex;
+    position: absolute;
+    top: 80%;
+    left: 60%;
+}
+
+#psLogo{
+    max-height: 15%;
+    display: flex;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+}
+
+#corelLogo{
+    max-height: 15%;
+    display: flex;
+    position: absolute;
+    top: 40%;
+    left: -10%;
+}
+
+#cLogo{
+    max-height: 15%;
+    display: flex;
+    position: absolute;
+    top: 80%;
+    left: 10%;
+}
+
+/*      Skills aviso    */
+/*      El hover no es compatible con móviles    */
+
+#skillsAviso{
+    display: flex;
+    position: absolute;
+    width: 50%;
+    top: 70%;
+    left: 25%;
+    color: white;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#skillsAviso h5{
+    margin: auto;
+    font-size: 120%;
+}
+
+#divImg:hover #skillsAviso{
+    opacity: 1;
+}

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--    Bootstrap 5.3.0    -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <!--    Iconos de Fontawesome   -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+        integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+
+    <!--    Referencia a archivos   -->
+    <link rel="stylesheet" href="/styles.css">
+
+    <!--    Librería Anime.js   -->
+    <script src="/anime-master/lib/anime.min.js"></script>
+
+    <link rel="shortcut icon" href="/img/cvLogo.png">
+    <title>Curriculum Web</title>
+
+</head>
+
+<body>
+    <!-- NAV BAR -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid px-5">
+            <a class="navbar-brand" href="#">
+                < Curriculum <small class="text-muted">Website</small> !></Curriculum>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#header">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#academico">Académico</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#laboral">Experiencias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- HEADER  -->
+
+    <header id="header">
+        <div class="container mt-5">
+            <div class="text-center mb-3">
+                <h1>Hola! Soy Juan Manuel Mascaró Iglesias</h1>
+                <h2><em class="text-muted">Y este es mi curriculum web</em></h2>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6" id="box1">
+                    <div class="header-content-left" id="box2">
+                        <div class="text-center p-4">
+                            <div class="pathsContainer">
+                                <!-- Path HTML  -->
+                                <svg height="100" width="100">
+                                    <path id="htmlPath" d="M 0 0 Q 30 -90 90 -60 Q 80 -10 0 0 Z" stroke="black"
+                                        stroke-width="1px" fill="none" />
+                                </svg>
+                                <!-- Path CSS   -->
+                                <svg height="100" width="100">
+                                    <path id="cssPath" d="M 0 0 Q 80 15 100 65 Q 60 95 0 0 Z" stroke="red"
+                                        stroke-width="0px" fill="none" />
+                                </svg>
+                                <!-- Path de JavaScript  -->
+                                <svg height="100" width="100">
+                                    <path id="jsPath" d="M 0 0 Q 90 20 90 90 Q 30 90 0 0 Z" stroke="orange"
+                                        stroke-width="0px" fill="none" />
+                                </svg>
+                                <!-- Path Photoshop  -->
+                                <svg height="100" width="100">
+                                    <path id="psPath" d="M 0 0 Q -30 -90 -90 -60 Q -80 -10 0 0 Z" stroke="black"
+                                        stroke-width="0px" fill="none" />
+                                </svg>
+                                <!-- Path Corel Draw   -->
+                                <svg height="100" width="100">
+                                    <path id="corelPath" d="M 0 0 Q -80 15 -100 65 Q -60 95 0 0 Z" stroke="red"
+                                        stroke-width="0px" fill="none" />
+                                </svg>
+                                <!-- Path C   -->
+                                <svg height="100" width="100">
+                                    <path id="cPath" d="M 0 0 Q -90 20 -90 90 Q -30 90 0 0 Z" stroke="blue"
+                                        stroke-width="0px" fill="none" />
+                                </svg>
+                            </div>
+                            <div id="divImg">
+                                <img id="imgPerfil" src="/img/imagen1.png" alt="Imagen de perfil" class="img-fluid"
+                                    style="width: auto; max-height: 650px;">
+                                <div id="skillsAviso">
+                                    <h5>Estoy<br>aprendiendo<br>estas skills.<br>Click!</h5>
+                                </div>
+                                <div class="logos">
+                                    <img id="htmlLogo" src="img/logos/html.png" alt="HTML Logo">
+                                    <img id="cssLogo" src="img/logos/css-3.png" alt="CSS Logo">
+                                    <img id="jsLogo" src="img/logos/js.png" alt="JavaScript Logo">
+                                    <img id="psLogo" src="img/logos/photoshop.png" alt="Photshop Logo">
+                                    <img id="corelLogo" src="img/logos/corel.png" alt="Corel Draw Logo">
+                                    <img id="cLogo" src="img/logos/c.png" alt="C Logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 my-auto" id="box3">
+                    <div class="header-content-right" id="box4">
+                        <div class="text-center">
+                            <h3 class="mt-5">Motivación</h3>
+                            <p class="mt-3">Desarrolle este curriculum como entrega final para el curso "Primeros pasos
+                                del
+                                desarrollo frontend" de la academia Ticmas, dentro del plan nacional de Argentina
+                                Programa 4.0.</p>
+                            <footer class="mt-5">
+                                <p>Si te es de utilidad puedes descargar mi curriculum en formato PDF.
+                                </p>
+                                <a href="/pdf/Curriculum_Version_Web.pdf"
+                                    class="btn btn-outline-secondary btn-lg mt-3">Curriculum PDF</a>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ACADEMICO -->
+
+    <section id="academico">
+        <div class="container">
+            <div class="row py-4">
+                <div class="col-md-6">
+                    <section>
+                        <h2>Formación Académica</h2>
+                        <div class="mt-4">
+                            <h4 class="my-2">Estudios Universitarios:</h4>
+                            <p>2015-Presente <br>
+                                Carrera: Ingeniería Electrónica <br>
+                                Universidad Nacional de La Plata – Facultad de Ingeniería <br>
+                                Calle 1 N° 750 – La Plata (1900)</p> <br>
+
+                            <h4 class="my-2">Estudios Secundarios:</h4>
+                            <p>2007-2013 <br>
+                                Titulo Obtenido: Técnico en Electromecánica <br>
+                                E.E.S.T. N°1 <br>
+                                Carmen Granada N° 1153 – Trenque Lauquen (6400)</p> <br>
+
+                            <h4 class="my-2">Estudios Primarios:</h4>
+                            <p>2001-2006 <br>
+                                Primaria completada <br>
+                                Escuela Primaria N°2 <br>
+                                Avellaneda N° 225 – Trenque Lauquen (6400)</p>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-md-6">
+                    <section>
+                        <h2>Cursos y seminarios realizados</h2>
+                        <div class="mt-4">
+                            <h4 class="my-2">“Curso Elaboración de Cerveza Artesanal”</h4>
+                            <p>Año 2017 <br>
+                                Entidad: Mundo Pastel - La plata <br></p> <br>
+
+                            <h4 class="my-2">“Curso Intensivo de Estampado Textil Serigráfico”</h4>
+                            <p>Año 2013 <br>
+                                Entidad: Framatex - Buenos Aires <br>
+                            </p> <br>
+                        </div>
+                    </section>
+                    <hr>
+                    <section>
+                        <h2>Idiomas</h2>
+                        <div class="mt-4">
+                            <h4 class="my-2">Ingles</h4>
+                            <br>
+                            <p>Comprensión de texto técnico: Intermedio<br>
+                                <br> Comprensión en el habla: básico <br>
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCIA -->
+
+    <section id="experiencias" class="py-0">
+        <section>
+            <h2>Experiencias</h2>
+            <br>
+            <div class="py-2">
+                <h4 class="my-2">Ayudante no diplomado</h4>
+                <p>Año 2023 - 1° cuatrimestre <br>
+                    Cátedra: Análisis de Circuitos<br>
+                    Facultad de Ingeniería - UNLP</p><br><br>
+
+                <h4 class="my-2">Ayudante no diplomado</h4>
+                <p>Año 2022 - 2° cuatrimestre <br>
+                    Cátedra: Análisis de Circuitos<br>
+                    En marco de la Beca General Belgrano<br>
+                    Facultad de Ingeniería - UNLP</p> <br><br>
+
+                <h4 class="my-2">Auxiliar Mecánico de Automotores</h4>
+                <p>Año 2013-2014 <br>
+                    Entidad: “Taller Mecánico Mascaró” - Trenque Lauquen<br></p> <br><br>
+
+                <h4 class="my-2">Pasantía de Mecánico</h4>
+                <p>Año 2012 <br>
+                    Entidad: “Bhassa” Concesionario Oficial Toyota - Trenque Lauquen <br><br>
+                </p> <br>
+            </div>
+        </section>
+    </section>
+
+    <!-- Contacto  -->
+
+    <footer id="contacto" style="background-color: #f1f1f1;">
+        <div class="container bt-5">
+            <div class="row py-4 gap-3">
+                <div class="col-md-5" id="contacto1">
+                    <h2 class="text-center">Formulario de contacto</h2>
+                    <br>
+                    <div class="mb-3">
+                        <label for="nombrecompleto" class="form-label">Nombre completo</label>
+                        <input type="text" class="form-control" id="nombrecompleto" placeholder="John Doe">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Dirección de Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="texto" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="texto" rows="3"
+                            placeholder="Escriba el mensaje aquí..."></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-outline-secondary">Enviar</button>
+                    </div>
+                </div>
+                <div class="col-md-5 my-auto text-center">
+                    <h2>Datos Personales</h2>
+                    <div class="mt-4">
+                        <p>
+                            Nombre y Apellido:<br>Juan Manuel Mascaró Iglesias <br><br>
+                            Fecha de Nacimiento y lugar:<br>junio 1995 – Trenque Lauquen (6400) <br><br>
+                            Ciudad Actual:<br>La Plata (1900) Prov. de Bs. As. <br><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
